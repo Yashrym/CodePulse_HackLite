@@ -115,3 +115,5 @@ Reports are stored with fields aligned to the product schema:
 ## YOLO notes
 
 The default model is `yolov8n.pt` (COCO). Standard COCO weights do not include road-specific classes; the service filters irrelevant classes and **falls back to mock pothole/crack boxes** when no suitable detections are found, so the MVP flow always works. For production, train or fine-tune YOLO on a road-damage dataset and set `YOLO_MODEL` to your weights path
+
+##License
